@@ -119,7 +119,7 @@ onMounted(async () => {
 
     <!-- 右侧标题目录，在小屏幕下隐藏 -->
     <div class="toc-container" v-if="headings.length > 0 && !isSmallScreen">
-      <div class="toc-title">{{ $t("common.content") }}</div>
+      <div class="toc-title">目录</div>
       <div class="toc-items">
         <div v-for="(heading, index) in headings" :key="index" class="toc-item" :class="`level-${heading.level}`"
           @click="scrollToHeading(heading.id)">

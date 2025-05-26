@@ -8,6 +8,18 @@ importers:
 
   .:
     dependencies:
+      '@types/highlight.js':
+        specifier: ^10.1.0
+        version: 10.1.0
+      highlight.js:
+        specifier: ^11.11.1
+        version: 11.11.1
+      marked:
+        specifier: ^15.0.12
+        version: 15.0.12
+      marked-highlight:
+        specifier: ^2.2.1
+        version: 2.2.1(marked@15.0.12)
       pinia:
         specifier: ^3.0.1
         version: 3.0.2(typescript@5.8.3)(vue@3.5.14(typescript@5.8.3))
@@ -661,6 +673,10 @@ packages:
   '@types/estree@1.0.7':
     resolution: {integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==}
 
+  '@types/highlight.js@10.1.0':
+    resolution: {integrity: sha512-77hF2dGBsOgnvZll1vymYiNUtqJ8cJfXPD6GG/2M0aLRc29PkvB7Au6sIDjIEFcSICBhCh2+Pyq6WSRS7LUm6A==}
+    deprecated: This is a stub types definition. highlight.js provides its own type definitions, so you do not need this installed.
+
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
@@ -1158,6 +1174,10 @@ packages:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
 
+  highlight.js@11.11.1:
+    resolution: {integrity: sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==}
+    engines: {node: '>=12.0.0'}
+
   hookable@5.5.3:
     resolution: {integrity: sha512-Yc+BQe8SvoXH1643Qez1zqLRmbA5rCL+sSmk6TVos0LWVfNIB7PGncdlId77WzLGSIB5KaWgTaNTs2lNVEI6VQ==}
 
@@ -1295,6 +1315,16 @@ packages:
 
   magic-string@0.30.17:
     resolution: {integrity: sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA==}
+
+  marked-highlight@2.2.1:
+    resolution: {integrity: sha512-SiCIeEiQbs9TxGwle9/OwbOejHCZsohQRaNTY2u8euEXYt2rYUFoiImUirThU3Gd/o6Q1gHGtH9qloHlbJpNIA==}
+    peerDependencies:
+      marked: '>=4 <16'
+
+  marked@15.0.12:
+    resolution: {integrity: sha512-8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==}
+    engines: {node: '>= 18'}
+    hasBin: true
 
   memorystream@0.3.1:
     resolution: {integrity: sha512-S3UwM3yj5mtUSEfP41UZmt/0SCoVYUcU1rkXv+BQ5Ig8ndL4sPoJNBUJERafdPb5jjHJGuMgytgKvKIf58XNBw==}
@@ -2238,6 +2268,10 @@ snapshots:
 
   '@types/estree@1.0.7': {}
 
+  '@types/highlight.js@10.1.0':
+    dependencies:
+      highlight.js: 11.11.1
+
   '@types/json-schema@7.0.15': {}
 
   '@types/node@22.15.21':
@@ -2840,6 +2874,8 @@ snapshots:
 
   he@1.2.0: {}
 
+  highlight.js@11.11.1: {}
+
   hookable@5.5.3: {}
 
   human-signals@8.0.1: {}
@@ -2939,6 +2975,12 @@ snapshots:
   magic-string@0.30.17:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  marked-highlight@2.2.1(marked@15.0.12):
+    dependencies:
+      marked: 15.0.12
+
+  marked@15.0.12: {}
 
   memorystream@0.3.1: {}
 
