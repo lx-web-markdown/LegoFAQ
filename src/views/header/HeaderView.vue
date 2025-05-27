@@ -37,7 +37,8 @@ function goTo(path: string) {
   justify-content: space-between;
   height: 90px;
   background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  // box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-bottom: 2px solid #e0e0e0;
 
   .header-title {
     margin-left: 40px;

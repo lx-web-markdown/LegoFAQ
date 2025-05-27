@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "2c1ca3ca90bca714_hccRule",
+  "name": "hccRule",
+  "title": "巡检规则2.0",
+  "description": "巡检规则2.0",
+  "icon": "shejiqi-custom-01",
+  "keywords": [],
+  "tags": [],
+  "screenshot": [],
+  "docUrl": "",
+  "scenes": [
+    "DESIGNER_FORM_PLUGIN"
+  ],
+  "group": "default",
+  "subGroup": "default",
+  "supportPlatform": [
+    "pc",
+    "h5"
+  ],
+  "pluginType": "UI",
+  "framework": "Vue",
+  "props": {
+    "width": {
+      "name": "宽度",
+      "propType": "string"
+    }
+  },
+  "configure": {
+    "props": [
+      {
+        "name": "width",
+        "defaultValue": "100%",
+        "componentName": "DInput",
+        "label": "宽度",
+        "props": {
+          "value": "150px"
+        }
+      }
+    ]
+  },
+  "version": "0.0.1",
+  "pluginThumbnail": "/img/app-icon.5ee73a63.png",
+  "softDeleted": false,
+  "_id": "3c243e03d5a647d493c9518865044f8c"
+}

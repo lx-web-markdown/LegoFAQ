@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@types/highlight.js": "^10.1.0",
+    "github-markdown-css": "^5.8.1",
     "highlight.js": "^11.11.1",
     "marked": "^15.0.12",
     "marked-highlight": "^2.2.1",
