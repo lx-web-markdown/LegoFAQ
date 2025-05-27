@@ -13,3 +13,10 @@ const markdownFilePath = '/docs/0-工单维度-项目工单记录/博兴/博兴.
     <MarkdownComp :markdownFilePath="markdownFilePath" />
    </div>
 </template>
+
+<style lang="scss" scoped>
+.main-container {
+  padding: 20px;
+  background-color: #fff;
+}
+</style>

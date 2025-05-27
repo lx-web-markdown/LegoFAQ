@@ -21,7 +21,7 @@
 
 * `undefine legoQycloudMain`
 
-![](images/001.png)
+![](/docs/0-工单维度-项目工单记录/中安-舟山/images/001.png)
 
 
 
@@ -32,7 +32,7 @@
 
 
 
-![](images/002.png)
+![](/docs/0-工单维度-项目工单记录/中安-舟山/images/002.png)
 
 
 

@@ -12,7 +12,7 @@
 * csafety-edufront-成功
     * 运行 **微应用**：`pnpm run serve`
     * 运行 **微组件**：`pnpm run dev`
-    * 创建全新项目工程：![](images/001.png)
+    * 创建全新项目工程：![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/001.png)
 
 
 
@@ -22,7 +22,7 @@
 
 * 修改代理Cookie
 
-    ![](images/008.png)
+    ![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/008.png)
 
 * 执行命令：`pnpm run serve`
 
@@ -36,11 +36,11 @@
 
 调用lego页面
 
-![](images/006.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/006.png)
 
 运行报错：
 
-![](images/005.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/005.png)
 
 
 
@@ -48,7 +48,7 @@
 
 对比之前的Lego页面，发现多了这几个文件。
 
-![](images/007.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/007.png)
 
 
 
@@ -56,7 +56,7 @@
 
 与微组件冲突的几个js，直接置空。
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/004.png)
 
 
 
@@ -66,19 +66,19 @@
 
 先移除掉按钮拦截
 
-![](images/010.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/010.png)
 
 
 
-![](images/011.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/011.png)
 
 
 
-![](images/012.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/012.png)
 
 
 
-![](images/013.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/013.png)
 
 
 
@@ -88,7 +88,7 @@
 
 ### b. 搜索 `$wrap` ，发现 `$wrap` 是 `#J_body`
 
-![](images/014.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/014.png)
 
 
 
@@ -113,13 +113,13 @@
 
 ### b. 添加 `J_body` 
 
-![](images/009.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/009.png)
 
 
 
 ### c. 成功 - 有了 `J_body`
 
-![](images/015.png)
+![](/docs/1-功能维度-Lego汇总/新脚手架工程引入Lego cdn/images/015.png)
 
 
 

@@ -28,13 +28,13 @@
 
 ## 2. 配置server.js文件
 
-![](images/001.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/001.png)
 
 
 
 ## 3. 配置 hosts
 
-![](images/002.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/002.png)
 
 
 
@@ -48,11 +48,11 @@
 
 打开Web端链接，通过 **接口** 查看当前页面的具体信息 `/viewConfig` 或者 `/list` 等等接口：
 
-![](images/003.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/003.png)
 
 根据项目应用对应的信息，修改 `CommonForm.vue ` 文件中的信息：
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/004.png)
 
 
 
@@ -175,9 +175,9 @@ $ pnpm run serve
 
 
 
-![](images/005.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/005.png)
 
-![](images/006.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/006.png)
 
 启动完成后，使⽤图⽚中的链接即可打开模拟项⽬。 
 
@@ -199,7 +199,7 @@ $ pnpm run serve
 
 ● PHPSESSID 
 
-![](images/007.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/007.png)
 
 
 
@@ -207,7 +207,7 @@ $ pnpm run serve
 
 同步cookie信息后，即可看到菜单⻚⾯，点击即可进⼊对应类型⻚⾯。 
 
-![](images/008.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/008.png)
 
 
 
@@ -217,7 +217,7 @@ $ pnpm run serve
 
 ## 1. pnpm安装失败
 
-![](images/009.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/009.png)
 
 **解决：不用pnpm 使用npm**
 
@@ -227,7 +227,7 @@ $ pnpm run serve
 
 > `npm run serve` 出现如下错。
 
-![](images/010.png)
+![](/docs/1-功能维度-Lego汇总/Zero项目从零配置npm版/images/010.png)
 
 **解决： 终止，重新跑一次即可！！！**
 

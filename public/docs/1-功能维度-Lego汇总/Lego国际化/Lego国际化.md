@@ -21,9 +21,9 @@
         $ yarn start2
         ```
 
-    * ![](images/001.png)
+    * ![](/docs/1-功能维度-Lego汇总/Lego国际化/images/001.png)
 
-    * ![](images/002.png)
+    * ![](/docs/1-功能维度-Lego汇总/Lego国际化/images/002.png)
 
 
 
@@ -48,11 +48,11 @@ lego国际化覆盖了自写的国际化。
 
 
 
-![](images/003.png)
+![](/docs/1-功能维度-Lego汇总/Lego国际化/images/003.png)
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/Lego国际化/images/004.png)
 
-![](images/005.png)
+![](/docs/1-功能维度-Lego汇总/Lego国际化/images/005.png)
 
 
 

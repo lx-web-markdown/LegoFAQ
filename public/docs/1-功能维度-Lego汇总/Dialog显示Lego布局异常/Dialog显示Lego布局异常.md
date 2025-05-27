@@ -19,13 +19,13 @@
 
 ## 问题介绍
 
-![](images/001.png)
+![](/docs/1-功能维度-Lego汇总/Dialog显示Lego布局异常/images/001.png)
 
 
 
 ## 解决方案
 
-![](images/002.png)
+![](/docs/1-功能维度-Lego汇总/Dialog显示Lego布局异常/images/002.png)
 
 ```js
 setTimeout(() => {

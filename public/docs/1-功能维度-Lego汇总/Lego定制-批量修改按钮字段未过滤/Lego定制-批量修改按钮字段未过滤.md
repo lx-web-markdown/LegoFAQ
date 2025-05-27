@@ -22,11 +22,11 @@
 
 ## 问题描述
 
-![](images/001.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/001.png)
 
-![](images/002.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/002.png)
 
-![](images/003.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/003.png)
 
 
 
@@ -40,15 +40,15 @@
 
 ### a. 这是正常的
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/004.png)
 
 
 
 ### b. 这是有问题的 - 拦截了点击事件
 
-![](images/005.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/005.png)
 
-![](images/006.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/006.png)
 
 
 
@@ -61,9 +61,9 @@
 平台执行方法：packages/legoNext/src/desginerView/action/onViewAction.js
 ```
 
-![](images/007.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/007.png)
 
-![](images/008.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/008.png)
 
 
 
@@ -71,11 +71,11 @@
 
 对比正常 与 有问题的数据流程，发现正常时，数据中有一个步骤：`params.config = detail`
 
-![](images/009.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/009.png)
 
 
 
 所以在有问题的地方，补全 `config` 参数：
 
-![](images/010.png)
+![](/docs/1-功能维度-Lego汇总/Lego定制-批量修改按钮字段未过滤/images/010.png)
 

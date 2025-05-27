@@ -18,15 +18,15 @@
     * `localhost:3000`
     * 拼接上指定路由： `localhost:3000/training`
 
-![](images/006.png)
+![](/docs/1-功能维度-Lego汇总/中安-lego报错AY.router.xx not found/images/006.png)
 
 
 
 ## 问题截图
 
-![](images/003.png)
+![](/docs/1-功能维度-Lego汇总/中安-lego报错AY.router.xx not found/images/003.png)
 
-![](images/001.png)
+![](/docs/1-功能维度-Lego汇总/中安-lego报错AY.router.xx not found/images/001.png)
 
 
 
@@ -86,7 +86,7 @@ export default {
 
 * Lego项目源码
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/中安-lego报错AY.router.xx not found/images/004.png)
 
 
 
@@ -94,7 +94,7 @@ export default {
 
 * 拦截方法，自定义保存后的跳转路由。
 
-![](images/005.png)
+![](/docs/1-功能维度-Lego汇总/中安-lego报错AY.router.xx not found/images/005.png)
 
 
 

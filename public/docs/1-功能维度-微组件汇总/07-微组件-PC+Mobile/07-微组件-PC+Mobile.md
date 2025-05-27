@@ -11,7 +11,7 @@
 
 微组件中加入组件架构，只有PC端的时候是OK的，现在又要开发 Mobile端，注册的位置不对，导致在PC端加载不到。
 
-![](images/001.png)
+![](/docs/1-功能维度-微组件汇总/07-微组件-PC+Mobile/images/001.png)
 
 
 
@@ -19,4 +19,4 @@
 
 修改 LegoMobile加载位置
 
-![](images/002.png)
+![](/docs/1-功能维度-微组件汇总/07-微组件-PC+Mobile/images/002.png)

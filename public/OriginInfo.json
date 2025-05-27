@@ -1,0 +1,25 @@
+{
+  "originInfo": [
+    {
+      "id": "1",
+      "name": "0-工单维度-项目工单记录",
+      "desc": "0-工单维度-项目工单记录相关的笔记和文章。",
+      "fileRealPath": "./public/docs/0-工单维度-项目工单记录",
+      "fileListTxtPath": "./public/FileListTXT/fileList_0-工单维度-项目工单记录.txt"
+    },
+    {
+      "id": "2",
+      "name": "1-功能维度-Lego汇总",
+      "desc": "1-功能维度-Lego汇总相关的笔记和文章。",
+      "fileRealPath": "./public/docs/1-功能维度-Lego汇总",
+      "fileListTxtPath": "./public/FileListTXT/fileList_1-功能维度-Lego汇总.txt"
+    },
+    {
+      "id": "3",
+      "name": "1-功能维度-微组件汇总",
+      "desc": "1-功能维度-微组件汇总相关的笔记和文章。",
+      "fileRealPath": "./public/docs/1-功能维度-微组件汇总",
+      "fileListTxtPath": "./public/FileListTXT/fileList_1-功能维度-微组件汇总.txt"
+    }
+  ]
+}

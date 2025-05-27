@@ -6,7 +6,7 @@
 
 已经配置好了。
 
-![](images/001.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/001.png)
 
 
 
@@ -23,7 +23,7 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 
 # 二、工单号 - GD2024091000088
 
-![](images/002.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/002.png)
 
 
 
@@ -39,7 +39,7 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 
 > 创建了有一个微函数，在原生应用在上调用正常的，在定制页面上，触发错误！！
 
-![](images/004.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/004.png)
 
 
 
@@ -49,9 +49,9 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 
 原生应用地址：https://longi-ehs-test.longi.com/app/!/information/xiaofangshuixitong
 
-![](images/005.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/005.png)
 
-![](images/006.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/006.png)
 
 
 
@@ -63,13 +63,13 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 
 内部详情页路径（链接型应用）：https://longi-ehs-test.longi.com/safetyapp/proj/longi/gisLego?module=information&appId=xiaofangshuixitong&plotType=POINT
 
-![](images/010.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/010.png)
 
-![](images/007.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/007.png)
 
-![](images/008.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/008.png)
 
-![](images/009.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/009.png)
 
 
 
@@ -87,13 +87,13 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 
 原生应用地址：https://longi-ehs-test.longi.com/app/!/information/xiaofangshuixitong
 
-![](images/003.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/003.png)
 
 
 
 ### a. 查看按钮配置
 
-![](images/011.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/011.png)
 
 
 
@@ -103,7 +103,7 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 
 **入口在上方『全局样式』**
 
-![](images/012.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/012.png)
 
 
 
@@ -124,9 +124,9 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 * 管理员账号：admin_ljln / aykj8888
 
 * 问题截图：
-    * ![](images/107.png)
-    * ![](images/108.png)
-    * ![](images/109.png)
+    * ![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/107.png)
+    * ![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/108.png)
+    * ![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/109.png)
 
 
 
@@ -136,23 +136,23 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 
 ### a. 微组件 - 编辑
 
-![](images/101.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/101.png)
 
-![](images/102.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/102.png)
 
-![](images/103.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/103.png)
 
 
 
 ### b. 修改组件代码，输出 `$ctx`
 
-![](images/104.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/104.png)
 
 
 
 ### c. 本地调试微组件
 
-![](images/105.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/105.png)
 
 
 
@@ -160,7 +160,7 @@ PDF：当前路径下文件，『隆基绿能全球VPN客户端安装及使用�
 
 http://localhost:3001/#/desinger
 
-![](images/106.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/106.png)
 
 
 
@@ -168,7 +168,7 @@ http://localhost:3001/#/desinger
 
 未设置：**属性路径**。
 
-![](images/103.png)
+![](/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/images/103.png)
 
 
 

@@ -7,7 +7,7 @@
     * http://njswjteqxm-wuyouxiangmu2212fuwu-gqhdlz.k8s-assembly-machine.qpaas.com/
 * 测试账号&密码：admin_tnkg / aykj8888
 
-![](images/001.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/001.png)
 
 
 
@@ -31,7 +31,7 @@
 $ qpaas ui
 ```
 
-![](images/002.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/002.png)
 
 
 
@@ -39,9 +39,9 @@ $ qpaas ui
 
 #### a. 对比 - 两个DSelect
 
-![](images/003.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/003.png)
 
-![](images/004.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/004.png)
 
 
 
@@ -53,11 +53,11 @@ $ qpaas ui
 
 * DCheckbox
 
-![](images/007.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/007.png)
 
 * DSelect 
 
-![](images/008.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/008.png)
 
 
 
@@ -65,9 +65,9 @@ $ qpaas ui
 
 ### 3. 在微组件vue代码中进行日志输出
 
-![](images/005.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/005.png)
 
-![](images/006.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/006.png)
 
 
 
@@ -79,7 +79,7 @@ $ qpaas ui
 $ pnpm dev
 ```
 
-![](images/009.png)
+![](/docs/1-功能维度-微组件汇总/06-微组件-选择器监听不到a.b的值/images/009.png)
 
 
 

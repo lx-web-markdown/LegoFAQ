@@ -40,7 +40,7 @@ $ nvm use 12
 Now using node v12.22.12 (npm v6.14.16)
 ```
 
-![](images/001.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/001.png)
 
 
 
@@ -50,7 +50,7 @@ Now using node v12.22.12 (npm v6.14.16)
 $ pnpm install
 ```
 
-![](images/002.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/002.png)
 
 
 
@@ -77,7 +77,7 @@ $ npm install
 
 ### e. 配置Hosts
 
-![](images/010.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/010.png)
 
 
 
@@ -87,11 +87,11 @@ $ npm install
 $ npm run serve
 ```
 
-![](images/003.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/003.png)
 
 * 打开地址：https://dev.zhonganhse.com:8080/bee/za/web/
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/004.png)
 
 
 
@@ -112,7 +112,7 @@ $ npm run serve
 },
 ```
 
-![](images/005.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/005.png)
 
 
 
@@ -133,7 +133,7 @@ $ npm run serve
     );
 ```
 
-![](images/006.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/006.png)
 
 
 
@@ -162,7 +162,7 @@ $ npm add moment -S
 
 再运行，成功！！！
 
-![](images/007.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/007.png)
 
 
 
@@ -191,9 +191,9 @@ $ npm add moment -S
 
 再打开定制应用地址：`https://dev.zhonganhse.com:8080/bee/za/web/renyuanguanli`
 
-![](images/008.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/008.png)
 
-![](images/009.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2025/images/009.png)
 
 
 

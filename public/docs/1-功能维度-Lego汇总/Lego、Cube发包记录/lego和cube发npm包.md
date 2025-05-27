@@ -23,7 +23,7 @@
     * lego：packages/lego/src/versionRegistry.js
     * cube：packages/cube/src/versionRegistry.js
     
-    ![](images/003.png)
+    ![](/docs/1-功能维度-Lego汇总/Lego、Cube发包记录/images/003.png)
 
 
 
@@ -74,7 +74,7 @@ package.json版本号，⽐较繁琐。
 
 ### 方式二：未尝试
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/Lego、Cube发包记录/images/004.png)
 
 
 
@@ -126,15 +126,15 @@ Zero项目中，使用node14 安装包，node 12运行项目；
 
 # 三、2024.11.25 发包修改截图
 
-![](images/010.png)
+![](/docs/1-功能维度-Lego汇总/Lego、Cube发包记录/images/010.png)
 
-![](images/011.png)
+![](/docs/1-功能维度-Lego汇总/Lego、Cube发包记录/images/011.png)
 
-![](images/012.png)
+![](/docs/1-功能维度-Lego汇总/Lego、Cube发包记录/images/012.png)
 
-![](images/013.png)
+![](/docs/1-功能维度-Lego汇总/Lego、Cube发包记录/images/013.png)
 
-![](images/014.png)
+![](/docs/1-功能维度-Lego汇总/Lego、Cube发包记录/images/014.png)
 
 
 

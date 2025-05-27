@@ -14,23 +14,23 @@
 "dev-lego": "PACKTYPE=lego node ./bundler/dev-lego.js",
 ```
 
-![](images/002.png)
+![](/docs/1-功能维度-Lego汇总/Lego源码运行+工程引入本地运行的Lego，打断点/images/002.png)
 
 搜索 `bundler/dev-lego.js` ，进入文件修改
 
-![](images/003.png)
+![](/docs/1-功能维度-Lego汇总/Lego源码运行+工程引入本地运行的Lego，打断点/images/003.png)
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/Lego源码运行+工程引入本地运行的Lego，打断点/images/004.png)
 
 
 
 在 `dev-lego.js` 中找到 `packages/lego/webpack.config` 文件
 
-![](images/005.png)
+![](/docs/1-功能维度-Lego汇总/Lego源码运行+工程引入本地运行的Lego，打断点/images/005.png)
 
 进入  `packages/lego/webpack.config` 文件，修改css名称，方便外部项目导入。
 
-![](images/006.png)
+![](/docs/1-功能维度-Lego汇总/Lego源码运行+工程引入本地运行的Lego，打断点/images/006.png)
 
 
 
@@ -40,7 +40,7 @@
 $ pnpm dev-lego
 ```
 
-![](images/001.png)
+![](/docs/1-功能维度-Lego汇总/Lego源码运行+工程引入本地运行的Lego，打断点/images/001.png)
 
 
 
@@ -54,9 +54,9 @@ $ pnpm dev-lego
 
 ## html 中引入本地Lego
 
-![](images/007.png)
+![](/docs/1-功能维度-Lego汇总/Lego源码运行+工程引入本地运行的Lego，打断点/images/007.png)
 
-![](images/008.png)
+![](/docs/1-功能维度-Lego汇总/Lego源码运行+工程引入本地运行的Lego，打断点/images/008.png)
 
 
 

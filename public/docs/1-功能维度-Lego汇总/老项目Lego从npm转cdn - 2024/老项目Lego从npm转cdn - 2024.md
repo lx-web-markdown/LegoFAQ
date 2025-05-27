@@ -43,9 +43,9 @@
 
 
 
-![](images/001.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2024/images/001.png)
 
-![](images/002.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2024/images/002.png)
 
 
 
@@ -107,7 +107,7 @@ module.exports = {
 
 
 
-![](images/003.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2024/images/003.png)
 
 
 
@@ -115,11 +115,11 @@ module.exports = {
 
 ## 3. `config/index.js`
 
-![](images/005.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2024/images/005.png)
 
 
 
-![](images/004.png)
+![](/docs/1-功能维度-Lego汇总/老项目Lego从npm转cdn - 2024/images/004.png)
 
 
 
