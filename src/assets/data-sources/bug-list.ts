@@ -171,6 +171,6 @@ export const MicroAppBugList: BugItem[] = [
     createdAt: '2025-05-28',
     updatedAt: '2025-05-28',
     handler: '林祥', // 处理人
-    thumbnail: '/imgs/demo-8.jpg' // 缩略图
+    thumbnail: '/imgs/demo-8.gif' // 缩略图
   }
 ]
