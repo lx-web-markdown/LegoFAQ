@@ -15,7 +15,7 @@ const bugTypeTextMap: Record<string, string> = {
   microApp: '微应用问题',
   MicroFunc: '微函数问题',
   MicroComponent: '微组件问题',
-  Requirement: '需求反馈',
+  Requirement: '需求反馈'
 }
 
 const getBugTypeText = (type: string) => bugTypeTextMap[type] || type
@@ -33,8 +33,8 @@ const selectedProject = ref<string>('')
 // 整理所有tag
 const allTags = computed(() => {
   const tagSet = new Set<string>()
-  MicroAppBugList.forEach(bug => {
-    bug.tags?.forEach(tag => tagSet.add(tag))
+  MicroAppBugList.forEach((bug) => {
+    bug.tags?.forEach((tag) => tagSet.add(tag))
   })
   return Array.from(tagSet)
 })
@@ -42,7 +42,7 @@ const allTags = computed(() => {
 // 整理所有项目名
 const allProjects = computed(() => {
   const projectSet = new Set<string>()
-  MicroAppBugList.forEach(bug => {
+  MicroAppBugList.forEach((bug) => {
     if (bug.project) projectSet.add(bug.project)
   })
   return Array.from(projectSet)
@@ -53,11 +53,11 @@ const filteredList = computed(() => {
   let list = MicroAppBugList.slice()
   // 项目筛选
   if (selectedProject.value) {
-    list = list.filter(bug => bug.project === selectedProject.value)
+    list = list.filter((bug) => bug.project === selectedProject.value)
   }
   // tag筛选
   if (selectedTags.value.length > 0) {
-    list = list.filter(bug => selectedTags.value.every(tag => bug.tags?.includes(tag)))
+    list = list.filter((bug) => selectedTags.value.every((tag) => bug.tags?.includes(tag)))
   }
   // 时间排序（按bugDate）
   list.sort((a, b) => {
@@ -77,16 +77,33 @@ const filteredList = computed(() => {
       <el-button type="primary" @click="showFilter = !showFilter">
         {{ showFilter ? '收起筛选' : '筛选/搜索' }}
       </el-button>
-      <transition name="el-fade-in">
+      <transition name="slide-down-up">
         <div v-if="showFilter" class="filter-panel">
-          <el-select v-model="sortOrder" placeholder="时间排序" style="width: 120px; margin-right: 16px;">
+          <el-select
+            v-model="sortOrder"
+            placeholder="时间排序"
+            style="width: 120px; margin-right: 16px"
+          >
             <el-option label="时间倒序" value="desc" />
             <el-option label="时间顺序" value="asc" />
           </el-select>
-          <el-select v-model="selectedTags" multiple clearable filterable placeholder="选择标签" style="width: 220px; margin-right: 16px;">
+          <el-select
+            v-model="selectedTags"
+            multiple
+            clearable
+            filterable
+            placeholder="选择标签"
+            style="width: 220px; margin-right: 16px"
+          >
             <el-option v-for="tag in allTags" :key="tag" :label="tag" :value="tag" />
           </el-select>
-          <el-select v-model="selectedProject" clearable filterable placeholder="选择项目" style="width: 180px;">
+          <el-select
+            v-model="selectedProject"
+            clearable
+            filterable
+            placeholder="选择项目"
+            style="width: 180px"
+          >
             <el-option v-for="proj in allProjects" :key="proj" :label="proj" :value="proj" />
           </el-select>
         </div>
@@ -108,7 +125,9 @@ const filteredList = computed(() => {
           <div class="bug-title">{{ bug.title }}</div>
           <div class="bug-desc" v-if="bug.desc">{{ bug.desc }}</div>
           <div class="bug-tags">
-            <el-tag v-for="tag in bug.tags" :key="tag" size="small" style="margin-right: 6px;">{{ tag }}</el-tag>
+            <el-tag v-for="tag in bug.tags" :key="tag" size="small" style="margin-right: 6px">{{
+              tag
+            }}</el-tag>
           </div>
           <div class="bug-meta">
             <span>提交人：{{ bug.bugWho }}</span>
@@ -130,10 +149,9 @@ const filteredList = computed(() => {
   padding: 20px 50px;
   .filter-bar {
     margin-bottom: 18px;
-    display: flex;
-    align-items: center;
+    display: block;
     .el-button {
-      margin-right: 18px;
+      margin-right: 0;
     }
     .filter-panel {
       display: flex;
@@ -141,8 +159,8 @@ const filteredList = computed(() => {
       gap: 10px;
       background: #f7f8fa;
       border-radius: 8px;
-      padding: 16px 24px 10px 24px;
-      box-shadow: 0 2px 8px -4px rgba(0,0,0,0.04);
+      padding: 16px 0px 10px 0px;
+      box-shadow: 0 2px 8px -4px rgba(0, 0, 0, 0.04);
     }
   }
   .bug-list {
@@ -236,5 +254,30 @@ const filteredList = computed(() => {
       }
     }
   }
+}
+</style>
+
+<style scoped>
+.slide-down-up-enter-active,
+.slide-down-up-leave-active {
+  transition:
+    opacity 0.25s cubic-bezier(0.55, 0, 0.1, 1),
+    transform 0.25s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.slide-down-up-enter-from {
+  opacity: 0;
+  transform: translateY(-20px) scaleY(0.98);
+}
+.slide-down-up-enter-to {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+}
+.slide-down-up-leave-from {
+  opacity: 1;
+  transform: translateY(0) scaleY(1);
+}
+.slide-down-up-leave-to {
+  opacity: 0;
+  transform: translateY(-20px) scaleY(0.98);
 }
 </style>
