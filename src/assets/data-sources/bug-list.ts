@@ -24,7 +24,7 @@ export const MicroAppBugList: BugItem[] = [
   {
     id: 2024092900077, // 工单id
     title: '【甘肃省厅项目】甘肃双预防:非重大企业重点工艺相关统计数据在大屏的展示', // 标题
-    desc: '【甘肃省厅项目】甘肃双预防:非重大企业重点工艺相关统计数据在大屏的展示', // 概述
+    desc: '', // 概述
     filePath: '/docs/0-工单维度-项目工单记录/甘肃/甘肃.md', // 文章路径
     fileType: FileType.FILE_TYPE_Record, // 文件类型：工单记录
     fileFormat: FileFormat.FILE_FORMAT_MD, // 文件格式
@@ -43,7 +43,7 @@ export const MicroAppBugList: BugItem[] = [
   {
     id: 2024120900076, // 工单id
     title: 'Lego组件如何实现像平台原生应用下表单详情页点击关闭回到列表页还是能保持之前的搜索条件和分页', // 标题
-    desc: 'Lego组件如何实现像平台原生应用下表单详情页点击关闭回到列表页还是能保持之前的搜索条件和分页', // 概述
+    desc: '', // 概述
     filePath: '/docs/0-工单维度-项目工单记录/茂名高新园区-动态组件/茂名高新园区.md', // 文章路径
     fileType: FileType.FILE_TYPE_Record, // 文件类型：工单记录
     fileFormat: FileFormat.FILE_FORMAT_MD, // 文件格式
@@ -62,7 +62,7 @@ export const MicroAppBugList: BugItem[] = [
   {
     id: 2024112100100, // 工单id
     title: '链接应用中列表的高度铺满屏幕没有效果', // 标题
-    desc: '链接应用中列表的高度铺满屏幕没有效果', // 概述
+    desc: '', // 概述
     filePath: '/docs/0-工单维度-项目工单记录/泉州水务/泉州水务.md', // 文章路径
     fileType: FileType.FILE_TYPE_Record, // 文件类型：工单记录
     fileFormat: FileFormat.FILE_FORMAT_MD, // 文件格式
@@ -81,7 +81,7 @@ export const MicroAppBugList: BugItem[] = [
   {
     id: 2024091000088, // 工单id
     title: '微函数在lego定制页面不生效', // 标题
-    desc: '链接应用中列表的高度铺满屏幕没有效果', // 概述
+    desc: '', // 概述
     filePath: '/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/陕西隆基绿能EHS-1.md', // 文章路径
     fileType: FileType.FILE_TYPE_Record, // 文件类型：工单记录
     fileFormat: FileFormat.FILE_FORMAT_MD, // 文件格式
@@ -100,7 +100,7 @@ export const MicroAppBugList: BugItem[] = [
   {
     id: 2025021900037, // 工单id
     title: '微组件调试时编辑属性面板添加属性里表单选择器和主表字段选择，这两个组件选择内容后没有反应', // 标题
-    desc: '微组件调试时编辑属性面板添加属性里表单选择器和主表字段选择，这两个组件选择内容后没有反应', // 概述
+    desc: '', // 概述
     filePath: '/docs/0-工单维度-项目工单记录/陕西隆基绿能EHS/陕西隆基绿能EHS-2.md', // 文章路径
     fileType: FileType.FILE_TYPE_Record, // 文件类型：工单记录
     fileFormat: FileFormat.FILE_FORMAT_MD, // 文件格式
@@ -119,7 +119,7 @@ export const MicroAppBugList: BugItem[] = [
   {
     id: 2024081200090, // 工单id
     title: '设备小类后的快速查找按钮弹窗未弹出', // 标题
-    desc: '设备小类后的快速查找按钮弹窗未弹出', // 概述
+    desc: '', // 概述
     filePath: '/docs/0-工单维度-项目工单记录/上海中远海运/上海中远海运-1.md', // 文章路径
     fileType: FileType.FILE_TYPE_Record, // 文件类型：工单记录
     fileFormat: FileFormat.FILE_FORMAT_MD, // 文件格式
@@ -138,7 +138,7 @@ export const MicroAppBugList: BugItem[] = [
   {
     id: 2024081200094, // 工单id
     title: '今日到访页签添加筛选，designerConditions筛选无效', // 标题
-    desc: '今日到访页签添加筛选，designerConditions筛选无效', // 概述
+    desc: '', // 概述
     filePath: '/docs/0-工单维度-项目工单记录/上海中远海运/上海中远海运-2.md', // 文章路径
     fileType: FileType.FILE_TYPE_Record, // 文件类型：工单记录
     fileFormat: FileFormat.FILE_FORMAT_MD, // 文件格式
@@ -157,7 +157,7 @@ export const MicroAppBugList: BugItem[] = [
   {
     id: 2024082200068, // 工单id
     title: '详情页保存为定制，详情页返回列表页数据不刷新', // 标题
-    desc: '详情页保存为定制，详情页返回列表页数据不刷新', // 概述
+    desc: '', // 概述
     filePath: '/docs/0-工单维度-项目工单记录/上海中远海运/上海中远海运-3.md', // 文章路径
     fileType: FileType.FILE_TYPE_Record, // 文件类型：工单记录
     fileFormat: FileFormat.FILE_FORMAT_MD, // 文件格式

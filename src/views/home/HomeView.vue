@@ -5,6 +5,16 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 
+const bugTypeTextMap: Record<string, string> = {
+  lego: '乐高问题',
+  microApp: '微应用问题',
+  MicroFunc: '微函数问题',
+  MicroComponent: '微组件问题',
+  Requirement: '需求反馈',
+}
+
+const getBugTypeText = (type: string) => bugTypeTextMap[type] || type
+
 const goToDetail = (bug: BugItem) => {
   router.push(`/detail/${bug.id}`)
 }
@@ -16,15 +26,27 @@ const goToDetail = (bug: BugItem) => {
       <div class="bug-item" v-for="bug in MicroAppBugList" :key="bug.id" @click="goToDetail(bug)">
         <img class="bug-thumb" :src="bug.thumbnail" alt="thumb" />
         <div class="bug-content">
+          <div class="bug-header">
+            <span class="bug-id">工单号：GD{{ bug.id }}</span>
+            <span class="divider">|</span>
+            <span class="bug-project">{{ bug.project }}</span>
+            <span class="divider">|</span>
+            <span class="bug-type">{{ getBugTypeText(bug.bugType) }}</span>
+            <span class="divider">|</span>
+            <span class="bug-version">{{ bug.version }}版本</span>
+          </div>
           <div class="bug-title">{{ bug.title }}</div>
-          <div class="bug-desc">{{ bug.desc }}</div>
+          <div class="bug-desc" v-if="bug.desc">{{ bug.desc }}</div>
           <div class="bug-tags">
             <span class="bug-tag" v-for="tag in bug.tags" :key="tag">{{ tag }}</span>
           </div>
           <div class="bug-meta">
-            <span>处理人：{{ bug.handler }}</span>
             <span>提交人：{{ bug.bugWho }}</span>
+            <span class="divider">|</span>
+            <span>处理人：{{ bug.handler }}</span>
+            <span class="divider">|</span>
             <span>日期：{{ bug.bugDate }}</span>
+            <span class="divider">|</span>
             <a class="bug-link" :href="bug.bugLink" target="_blank">工单链接</a>
           </div>
         </div>
@@ -100,6 +122,37 @@ const goToDetail = (bug: BugItem) => {
           .bug-link {
             color: #409eff;
             text-decoration: underline;
+          }
+        }
+        .bug-footer {
+          font-size: 12px;
+          color: #999;
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          margin-top: 4px;
+          .divider {
+            color: #e0e0e0;
+            margin: 0 4px;
+          }
+        }
+        .bug-header {
+          font-size: 14px;
+          color: #555;
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          margin-bottom: 6px;
+          .bug-id {
+            font-weight: bold;
+            color: #2d8cf0;
+            font-size: 15px;
+            margin-right: 8px;
+            letter-spacing: 1px;
+          }
+          .divider {
+            color: #e0e0e0;
+            margin: 0 4px;
           }
         }
       }
