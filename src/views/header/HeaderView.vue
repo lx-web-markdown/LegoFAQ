@@ -2,7 +2,8 @@
   <header class="header-view">
     <div class="header-title">LegoFAQ</div>
     <nav class="header-nav">
-      <button v-for="btn in buttons" :key="btn.path" @click="goTo(btn.path)">
+      <!-- <button v-for="btn in buttons" :key="btn.path" @click="goTo(btn.path)"> -->
+      <button v-for="btn in buttons" :key="btn.path" @click="ElMessage.warning('暂未开发')">
         {{ btn.label }}
       </button>
     </nav>
@@ -10,23 +11,24 @@
 </template>
 
 <script lang="ts" setup>
-import { useRouter } from 'vue-router';
+import { ElMessage } from 'element-plus'
+import { useRouter } from 'vue-router'
 
-const router = useRouter();
+const router = useRouter()
 
 interface Button {
-  label: string;
-  path: string;
+  label: string
+  path: string
 }
 
 const buttons: Button[] = [
   { label: '首页', path: '/' },
   { label: '问答', path: '/faq' },
-  { label: '关于', path: '/about' },
-];
+  { label: '关于', path: '/about' }
+]
 
 function goTo(path: string) {
-  router.push(path);
+  router.push(path)
 }
 </script>
 
