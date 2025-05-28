@@ -1,7 +1,12 @@
 <script setup lang="ts">
+import { ref, computed } from 'vue'
 import type { BugItem } from '@/assets/data-sources/item-interface'
 import { MicroAppBugList } from '@/assets/data-sources/bug-list'
 import { useRouter } from 'vue-router'
+
+// Element Plus 相关
+import { ElButton, ElSelect, ElOption, ElTag } from 'element-plus'
+import 'element-plus/dist/index.css'
 
 const router = useRouter()
 
@@ -18,12 +23,77 @@ const getBugTypeText = (type: string) => bugTypeTextMap[type] || type
 const goToDetail = (bug: BugItem) => {
   router.push(`/detail/${bug.id}`)
 }
+
+// 筛选相关
+const showFilter = ref(false)
+const sortOrder = ref<'desc' | 'asc'>('desc')
+const selectedTags = ref<string[]>([])
+const selectedProject = ref<string>('')
+
+// 整理所有tag
+const allTags = computed(() => {
+  const tagSet = new Set<string>()
+  MicroAppBugList.forEach(bug => {
+    bug.tags?.forEach(tag => tagSet.add(tag))
+  })
+  return Array.from(tagSet)
+})
+
+// 整理所有项目名
+const allProjects = computed(() => {
+  const projectSet = new Set<string>()
+  MicroAppBugList.forEach(bug => {
+    if (bug.project) projectSet.add(bug.project)
+  })
+  return Array.from(projectSet)
+})
+
+// 过滤和排序后的列表
+const filteredList = computed(() => {
+  let list = MicroAppBugList.slice()
+  // 项目筛选
+  if (selectedProject.value) {
+    list = list.filter(bug => bug.project === selectedProject.value)
+  }
+  // tag筛选
+  if (selectedTags.value.length > 0) {
+    list = list.filter(bug => selectedTags.value.every(tag => bug.tags?.includes(tag)))
+  }
+  // 时间排序（按bugDate）
+  list.sort((a, b) => {
+    if (sortOrder.value === 'desc') {
+      return b.bugDate.localeCompare(a.bugDate)
+    } else {
+      return a.bugDate.localeCompare(b.bugDate)
+    }
+  })
+  return list
+})
 </script>
 
 <template>
   <div class="home-view">
+    <div class="filter-bar">
+      <el-button type="primary" @click="showFilter = !showFilter">
+        {{ showFilter ? '收起筛选' : '筛选/搜索' }}
+      </el-button>
+      <transition name="el-fade-in">
+        <div v-if="showFilter" class="filter-panel">
+          <el-select v-model="sortOrder" placeholder="时间排序" style="width: 120px; margin-right: 16px;">
+            <el-option label="时间倒序" value="desc" />
+            <el-option label="时间顺序" value="asc" />
+          </el-select>
+          <el-select v-model="selectedTags" multiple clearable filterable placeholder="选择标签" style="width: 220px; margin-right: 16px;">
+            <el-option v-for="tag in allTags" :key="tag" :label="tag" :value="tag" />
+          </el-select>
+          <el-select v-model="selectedProject" clearable filterable placeholder="选择项目" style="width: 180px;">
+            <el-option v-for="proj in allProjects" :key="proj" :label="proj" :value="proj" />
+          </el-select>
+        </div>
+      </transition>
+    </div>
     <div class="bug-list">
-      <div class="bug-item" v-for="bug in MicroAppBugList" :key="bug.id" @click="goToDetail(bug)">
+      <div class="bug-item" v-for="bug in filteredList" :key="bug.id" @click="goToDetail(bug)">
         <img class="bug-thumb" :src="bug.thumbnail" alt="thumb" />
         <div class="bug-content">
           <div class="bug-header">
@@ -38,7 +108,7 @@ const goToDetail = (bug: BugItem) => {
           <div class="bug-title">{{ bug.title }}</div>
           <div class="bug-desc" v-if="bug.desc">{{ bug.desc }}</div>
           <div class="bug-tags">
-            <span class="bug-tag" v-for="tag in bug.tags" :key="tag">{{ tag }}</span>
+            <el-tag v-for="tag in bug.tags" :key="tag" size="small" style="margin-right: 6px;">{{ tag }}</el-tag>
           </div>
           <div class="bug-meta">
             <span>提交人：{{ bug.bugWho }}</span>
@@ -58,6 +128,23 @@ const goToDetail = (bug: BugItem) => {
 <style lang="scss" scoped>
 .home-view {
   padding: 20px 50px;
+  .filter-bar {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    .el-button {
+      margin-right: 18px;
+    }
+    .filter-panel {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #f7f8fa;
+      border-radius: 8px;
+      padding: 16px 24px 10px 24px;
+      box-shadow: 0 2px 8px -4px rgba(0,0,0,0.04);
+    }
+  }
   .bug-list {
     display: flex;
     flex-direction: column;
@@ -103,15 +190,6 @@ const goToDetail = (bug: BugItem) => {
         }
         .bug-tags {
           margin-bottom: 8px;
-          .bug-tag {
-            display: inline-block;
-            background: #f0f0f0;
-            color: #333;
-            border-radius: 4px;
-            padding: 2px 8px;
-            font-size: 12px;
-            margin-right: 6px;
-          }
         }
         .bug-meta {
           font-size: 12px;

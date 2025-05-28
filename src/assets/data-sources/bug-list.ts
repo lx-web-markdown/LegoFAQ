@@ -91,7 +91,7 @@ export const MicroAppBugList: BugItem[] = [
     bugWho: '吴兆龙', // 错误提交人
     bugDate: '2024-09-10',
     version: 'v23.12', // 版本号
-    tags: ['微函数', 'lego'], // 标签
+    tags: ['Lego', '微函数'], // 标签
     createdAt: '2025-05-28',
     updatedAt: '2025-05-28',
     handler: '林祥', // 处理人
