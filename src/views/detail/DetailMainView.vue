@@ -1,10 +1,21 @@
-
 <script setup lang="ts">
 
+import { computed } from 'vue';
+import { useRoute } from 'vue-router';
 import MarkdownComp from '@/components/MarkdownComp/MarkdownComp.vue';
+import { MicroAppBugList } from '@/assets/data-sources/bug-list';
 
-const markdownFilePath = '/docs/0-工单维度-项目工单记录/博兴/博兴.md'
+// 获取路由参数
+const route = useRoute();
+const bugId = computed(() => Number(route.params.id));
 
+// 查找对应的bug数据
+const bugData = computed(() => {
+  return MicroAppBugList.find(item => item.id === bugId.value);
+});
+
+// 动态获取markdown路径
+const markdownFilePath = computed(() => bugData.value?.filePath || '');
 </script>
 
 <template>

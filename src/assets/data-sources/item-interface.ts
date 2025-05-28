@@ -19,7 +19,7 @@ export interface BugItem {
 }
 
 export enum FileType {
-  FILE_TYPE_Bug = 'Bug', // 工单
+  FILE_TYPE_Record = 'Record', // 工单记录
   FILE_TYPE_Usage = 'Usage' // 使用文档
 }
 
@@ -37,6 +37,7 @@ export enum BugType {
   Bug_TYPE_MICROAPP = 'microApp', // 微应用
   Bug_TYPE_MicroFunc = 'MicroFunc', // 微函数
   Bug_TYPE_MicroComponent = 'MicroComponent', // 微组件
+  Bug_TYPE_Requirement = 'Requirement', // 需求
 }
 
 // 枚举所有的项目，便于后续筛选
